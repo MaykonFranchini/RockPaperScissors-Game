@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,700;1,400&family=Indie+Flower&family=Yusei+Magic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #061847;
+}
+
+header {
+    padding: 20px;
+    font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+    font-size: 40px;
+    text-align: center;
+    background-color: #dbdbdd;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    width: 200px;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 46px;
+    border-radius: 4px;
+    padding: 15px 20px;
+}
+
+#user-score,
+#computer-score {
+    font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+    font-size: 40px;
+}
+
+.badge {
+    background: #8d54d8;
+    color: white;
+    font-size: 20px;
+    font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+#user-label {
+    position: absolute;
+    left: -20px;
+    top: 30px;
+}
+
+#computer-label {
+    position: absolute;
+    right: -20px;
+    top: 30px;
+}
+
+.result {
+    color: white;
+    font-size: 40px;
+}
+
+.result>p {
+    font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+    text-align: center;
+}
+
+.choices {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.choice {
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: #051131;
+}
+
+#action-message {
+    text-align: center;
+    color: white;
+    font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+    font-size: 25px;
+}
+
+.green-glow {
+    border: 5px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
+
+@media only screen and (max-width:570px) {
+    header {
+        padding: 0;
+        font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+        font-size: 20px;
+        text-align: center;
+    }
+    .result {
+        color: white;
+        font-size: 25px;
+    }
+    .result>p {
+        font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+        text-align: center;
+    }
+    .choices {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .choice {
+        display: inline-block;
+        border: 4px solid white;
+        border-radius: 50%;
+        padding: 20px 5px;
+        margin: 10px 0px;
+        transition: all 0.3s ease;
+    }
+    .choice img {
+        width: 70%;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width:433px) {
+    header {
+        padding: 0;
+        font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+        font-size: 20px;
+        text-align: center;
+    }
+    .result {
+        color: white;
+        font-size: 20px;
+    }
+    .result>p {
+        font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+        text-align: center;
+    }
+    .choices {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .choice {
+        display: inline-block;
+        border: 4px solid white;
+        border-radius: 10%;
+        padding: 10px;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    .choice img {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    header {
+        padding: 0;
+        font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+        font-size: 20px;
+        text-align: center;
+    }
+    .result {
+        color: white;
+        font-size: 20px;
+    }
+    .result>p {
+        font-family: Chakra Petch, sans-serif, Helvetica, Arial;
+        text-align: center;
+    }
+    .choices {
+        text-align: center;
+        margin: 5px 0;
+    }
+    .choice {
+        display: inline-block;
+        border: 4px solid white;
+        border-radius: 10%;
+        padding: 0px;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    .choice img {
+        width: 30%;
+    }
+}
+
+.green-glow {
+    border: 5px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
